@@ -23,7 +23,7 @@ jobs:
         run: npm run build
 
       - name: Add CNAME
-        run: echo nova.wia.io >./dist/nova-website/CNAME
+        run: echo wiaio.github.io/nova-website >./dist/nova-website/CNAME
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
