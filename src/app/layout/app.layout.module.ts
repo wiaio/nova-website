@@ -10,12 +10,10 @@ import { RadioButtonModule } from 'primeng/radiobutton';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { TooltipModule } from 'primeng/tooltip';
 import { RippleModule } from 'primeng/ripple';
-import { AppConfigModule } from './config/app.config.module';
 import { AppLayoutComponent } from './app.layout.component';
 import { AppBreadcrumbComponent } from './app.breadcrumb.component';
 import { AppSidebarComponent } from './app.sidebar.component';
 import { AppTopbarComponent } from './app.topbar.component';
-import { AppProfileSidebarComponent } from './app.profilesidebar.component';
 import { AppMenuComponent } from './app.menu.component';
 import { AppMenuitemComponent } from './app.menuitem.component';
 import { RouterModule } from '@angular/router';
@@ -29,7 +27,6 @@ import { StyleClassModule } from 'primeng/styleclass';
     AppBreadcrumbComponent,
     AppSidebarComponent,
     AppTopbarComponent,
-    AppProfileSidebarComponent,
     AppMenuComponent,
     AppMenuitemComponent,
   ],
@@ -48,7 +45,6 @@ import { StyleClassModule } from 'primeng/styleclass';
     TooltipModule,
     RippleModule,
     RouterModule,
-    AppConfigModule,
     StyleClassModule,
   ],
 })
