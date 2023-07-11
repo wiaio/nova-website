@@ -22,11 +22,11 @@ jobs:
       - name: Build website
         run: npm run build
 
-      - name: Add CNAME
-        run: echo wiaio.github.io/nova-website >./dist/nova-website/CNAME
+      # - name: Add CNAME
+      #   run: echo wiaio.github.io/nova-website >./dist/nova-website/CNAME
 
-      - name: cp 404
-        run: cp ./src/404.html ./dist/nova-website/
+      # - name: cp 404
+      #   run: cp ./src/404.html ./dist/nova-website/
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
@@ -37,6 +37,8 @@ jobs:
           # Build output to publish to the `gh-pages` branch:
           publish_dir: ./dist/nova-website
           base_href: /nova-website/
+          target_branch: gh-pages
+          build_dir: dist/nova-website
           # The following lines assign commit authorship to the official
           # GH-Actions bot for deploys to `gh-pages` branch:
           # https://github.com/actions/checkout/issues/13#issuecomment-724415212
