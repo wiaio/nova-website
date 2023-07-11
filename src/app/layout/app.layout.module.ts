@@ -20,32 +20,36 @@ import { AppMenuComponent } from './app.menu.component';
 import { AppMenuitemComponent } from './app.menuitem.component';
 import { RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
+import { CommonModule } from '@angular/common';
+import { StyleClassModule } from 'primeng/styleclass';
 
 @NgModule({
-    declarations: [
-        AppLayoutComponent,
-        AppBreadcrumbComponent,
-        AppSidebarComponent,
-        AppTopbarComponent,
-        AppProfileSidebarComponent,
-        AppMenuComponent,
-        AppMenuitemComponent
-    ],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        HttpClientModule,
-        BrowserAnimationsModule,
-        InputTextModule,
-        SidebarModule,
-        BadgeModule,
-        RadioButtonModule,
-        InputSwitchModule,
-        ButtonModule,
-        TooltipModule,
-        RippleModule,
-        RouterModule,
-        AppConfigModule
-    ]
+  declarations: [
+    AppLayoutComponent,
+    AppBreadcrumbComponent,
+    AppSidebarComponent,
+    AppTopbarComponent,
+    AppProfileSidebarComponent,
+    AppMenuComponent,
+    AppMenuitemComponent,
+  ],
+  imports: [
+    CommonModule,
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    InputTextModule,
+    SidebarModule,
+    BadgeModule,
+    RadioButtonModule,
+    InputSwitchModule,
+    ButtonModule,
+    TooltipModule,
+    RippleModule,
+    RouterModule,
+    AppConfigModule,
+    StyleClassModule,
+  ],
 })
-export class AppLayoutModule { }
+export class AppLayoutModule {}

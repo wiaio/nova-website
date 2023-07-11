@@ -9,7 +9,8 @@ const routerOptions: ExtraOptions = {
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./landing/landing.module').then(m => m.LandingModule),
+    component: AppLayoutComponent,
+    children: [{ path: '', loadChildren: () => import('./landing/landing.module').then(m => m.LandingModule) }],
   },
   // {
   //   path: '',

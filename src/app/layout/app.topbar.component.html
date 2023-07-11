@@ -1,28 +1,98 @@
-<div class="layout-topbar">
-    <div class="topbar-start">
-        <button #menubutton type="button" class="topbar-menubutton p-link p-trigger" (click)="onMenuButtonClick()">
-            <i class="pi pi-bars"></i>
-        </button>
+<div
+  class="flex align-items-center justify-content-between relative lg:static py-6 px-4 mx-0 md:px-7 lg:px-8 lg:py-6 lg:mx-8">
+  <a class="cursor-pointer wia-logo" [routerLink]="['/']">
+    <img src="assets/layout/images/avatar.png" alt="Profile" />
+  </a>
+  <a
+    pRipple
+    class="cursor-pointer block md:hidden text-700 text-primary"
+    pStyleClass="@next"
+    enterClass="ng-hidden"
+    enterActiveClass="px-fadein"
+    leaveToClass="ng-hidden"
+    leaveActiveClass="px-fadeout"
+    [hideOnOutsideClick]="true">
+    <i class="pi pi-bars text-4xl"></i>
+  </a>
+  <ul
+    #menu
+    style="top: 80px; right: 0%"
+    class="list-none p-3 md:p-0 justify-content-end ng-hidden md:flex absolute md:static w-full md:w-6 md:px-0 z-3 shadow-2 md:shadow-none surface-card md:surface-ground">
+    <a
+      pRipple
+      class="cursor-pointer block md:hidden text-700 text-primary absolute z-5"
+      style="top: 1.5rem; right: 1.5rem"
+      pRipple
+      pStyleClass="@parent"
+      enterClass="ng-hidden"
+      enterActiveClass="px-fadein"
+      leaveToClass="ng-hidden"
+      leaveActiveClass="px-fadeout">
+      <i class="pi pi-times text-3xl"></i>
+    </a>
 
-        <app-breadcrumb class="topbar-breadcrumb"></app-breadcrumb>
-    </div>
+    <li class="md:mt-0">
+      <a
+        routerLink="/energy"
+        pRipple
+        pStyleClass="@grandparent"
+        enterClass="ng-hidden"
+        enterActiveClass="px-fadein"
+        leaveToClass="ng-hidden"
+        class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3 cursor-pointer">
+        <span>Energy</span>
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/product"
+        pRipple
+        pStyleClass="@grandparent"
+        enterClass="ng-hidden"
+        enterActiveClass="px-fadein"
+        leaveToClass="ng-hidden"
+        class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3 cursor-pointer">
+        <span>Product</span>
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/pricing"
+        pRipple
+        pStyleClass="@grandparent"
+        enterClass="ng-hidden"
+        enterActiveClass="px-fadein"
+        leaveToClass="ng-hidden"
+        class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3 cursor-pointer">
+        <span>Pricing</span>
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://developers.wia.io/"
+        pRipple
+        pStyleClass="@grandparent"
+        enterClass="ng-hidden"
+        enterActiveClass="px-fadein"
+        leaveToClass="ng-hidden"
+        class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3 cursor-pointer">
+        <span>Developers</span>
+      </a>
+    </li>
 
-    <div class="topbar-end">
-        <ul class="topbar-menu">
-            <li class="topbar-search">
-                <span class="p-input-icon-left">
-                    <i class="pi pi-search"></i>
-                    <input type="text" pInputText placeholder="Search" class="w-12rem sm:w-full">
-                </span>
-            </li>
-            <li class="ml-3">
-                <button pButton type="button" icon="pi pi-cog" class="p-button-text p-button-secondary p-button-rounded flex-shrink-0" (click)="onConfigButtonClick()"></button>
-            </li>
-            <li class="topbar-profile">
-                <button type="button" class="p-link" (click)="onProfileButtonClick()">
-                    <img src="assets/layout/images/avatar.png" alt="Profile" />
-                </button>
-            </li>
-        </ul>
-    </div>
+    <li class="flex align-items-center">
+      <a href="https://dashboard.wia.io/auth/login">
+        <button
+          pButton
+          pRipple
+          type="button"
+          pStyleClass="@grandparent"
+          enterClass="ng-hidden"
+          enterActiveClass="px-fadein"
+          leaveToClass="ng-hidden"
+          label="Log In"
+          class="m-0 mt-3 md:mt-0 md:ml-5 white-space-nowrap"></button
+      ></a>
+    </li>
+  </ul>
 </div>

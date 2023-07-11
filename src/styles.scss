@@ -2,18 +2,42 @@
 $gutter: 1rem; //for primeflex grid system
 
 /* Layout */
-@import "assets/layout/styles/layout/layout.scss";
+@import 'assets/layout/styles/layout/layout.scss';
 
 /* PrimeNG */
-@import "../node_modules/primeng/resources/primeng.min.css";
-@import "../node_modules/primeflex/primeflex.scss";
-@import "../node_modules/primeicons/primeicons.css";
+@import '../node_modules/primeng/resources/primeng.min.css';
+@import '../node_modules/primeflex/primeflex.scss';
+@import '../node_modules/primeicons/primeicons.css';
 
 /* Quill Text Editor for p-editor */
-@import "../node_modules/quill/dist/quill.core.css";
-@import "../node_modules/quill/dist/quill.snow.css";
+@import '../node_modules/quill/dist/quill.core.css';
+@import '../node_modules/quill/dist/quill.snow.css';
 
 /* Demos */
-@import "assets/demo/styles/flags/flags.css";
-@import "assets/demo/styles/badges.scss";
-@import "assets/demo/styles/code.scss";
+@import 'assets/demo/styles/flags/flags.css';
+@import 'assets/demo/styles/badges.scss';
+@import 'assets/demo/styles/code.scss';
+
+.bg-circle {
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  background-image: linear-gradient(140deg, var(--primary-color), var(--surface-ground) 80%);
+  position: absolute;
+  opacity: 0.25;
+  z-index: -1;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.moveinright {
+  animation: moveinright 0.15s linear;
+}
+.wia-logo {
+  img {
+    height: 34px;
+    width: auto;
+  }
+}
