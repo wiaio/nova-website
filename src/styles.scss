@@ -18,7 +18,7 @@ $gutter: 1rem; //for primeflex grid system
   height: 1000px;
   border-radius: 50%;
   background-image: linear-gradient(140deg, var(--primary-color), var(--surface-ground) 80%);
-  position: absolute;
+  position: fixed;
   opacity: 0.25;
   z-index: -1;
 }

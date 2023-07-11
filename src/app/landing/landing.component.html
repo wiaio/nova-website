@@ -1,40 +1,29 @@
 <div class="relative overflow-hidden flex flex-column justify-content-center">
-  <!-- <div class="bg-circle opacity-50" style="top: -200px; left: -700px"></div>
-  <div class="bg-circle hidden lg:flex" style="top: 50px; right: -800px; transform: rotate(60deg)"></div> -->
   <div class="landing-wrapper">
     <div class="py-4 px-4 mx-0 md:mx-6 lg:mx-8 lg:px-8 z-2">
-      <div id="home" class="grid grid-nogutter justify-content-between align-items-center mb-6 py-6 md:mb-8 md:py-8">
+      <div id="header" class="my-6 md:my-8">
+        <span class="text-900 block font-semibold text-7xl mb-4 text-center"
+          >Nova - Driving Businesses Towards a Sustainable Future</span
+        >
+      </div>
+      <div id="home" class="grid grid-nogutter justify-content-between align-items-center mb-6 py-6 md:mb-6 md:py-8">
         <div
-          class="col-12 md:col-4 flex flex-column gap-4 flex-order-1 md:flex-order-0 align-items-center md:align-items-start text-center md:text-left">
-          <span class="block text-900 font-bold text-4xl">Modern, stylish and clean</span>
-          <span class="block text-700 text-lg"
-            >The ultimate collection of design-agnostic, flexible and accessible UI Components.</span
+          class="col-12 md:col-5 flex flex-column gap-4 flex-order-1 md:flex-order-0 align-items-center md:align-items-start text-center md:text-left">
+          <span class="block text-900 font-bold text-4xl"
+            >Redefining Energy Utilisation Through Intelligent Monitoring</span
           >
-          <ul class="flex flex-wrap gap-5 list-none p-0">
-            <li class="flex align-items-center">
-              <div class="p-1 border-circle bg-green-400 inline-block mr-2"></div>
-              <span class="text-900 font-semibold">Javascript</span>
-            </li>
-            <li class="flex align-items-center">
-              <div class="p-1 border-circle bg-green-400 inline-block mr-2"></div>
-              <span class="text-900 font-semibold">TypeScript</span>
-            </li>
-            <li class="flex align-items-center">
-              <div class="p-1 border-circle bg-green-400 inline-block mr-2"></div>
-              <span class="text-900 font-semibold">Angular</span>
-            </li>
-          </ul>
+
           <button
             pButton
             pRipple
             type="button"
-            label="Live Preview"
+            label="Speak to us"
             icon="pi pi-arrow-right"
             iconPos="right"
             class="w-12rem p-button-outlined"></button>
         </div>
 
-        <div class="col-12 md:col-7 flex-order-0 md:flex-order-1 mb-6 md:mb-0 border-round">
+        <div class="col-12 md:col-6 flex-order-0 md:flex-order-1 mb-6 md:mb-0 border-round">
           <img
             animateEnter="moveinright"
             src="assets/demo/images/landing/{{ darkMode ? 'dashboard-dark' : 'dashboard-light' }}.png"
@@ -43,204 +32,224 @@
         </div>
       </div>
 
-      <div id="apps" class="my-6 md:my-8">
-        <span class="text-900 block font-bold text-5xl mb-4 text-center">Apps</span>
-        <span class="text-700 block text-xl mb-8 text-center line-height-3"
-          >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos.</span
-        >
-
-        <div class="flex flex-column lg:flex-row align-items-center justify-content-between mt-8 gap-8">
-          <div class="flex flex-column align-items-center">
-            <img
-              animateEnter="scalein"
-              src="assets/demo/images/landing/{{ darkMode ? 'chat-dark' : 'chat-light' }}.png"
-              alt="chat"
-              class="w-full h-full border-round surface-border shadow-2 animation-duration-500 origin-top" />
-            <span class="block text-900 text-lg font-semibold mt-4">Chat</span>
-          </div>
-          <div class="flex flex-column align-items-center">
-            <img
-              animateEnter="scalein"
-              src="assets/demo/images/landing/{{ darkMode ? 'mail-dark' : 'mail-light' }}.png"
-              alt="chat"
-              class="w-full h-full border-round surface-border shadow-2 animation-duration-500 origin-top" />
-            <span class="block text-900 text-lg font-semibold mt-4">Mail</span>
-          </div>
-          <div class="flex flex-column align-items-center">
-            <img
-              animateEnter="scalein"
-              src="assets/demo/images/landing/{{ darkMode ? 'kanban-dark' : 'kanban-light' }}.png"
-              alt="chat"
-              class="w-full h-full border-round surface-border shadow-2 animation-duration-500 origin-top" />
-            <span class="block text-900 text-lg font-semibold mt-4">Kanban</span>
-          </div>
-        </div>
+      <div id="features" class="my-6 py-6 md:my-6 md:py-6">
+        <span class="text-700 block text-xl text-center line-height-3">
+          In the fast-paced world of business, every watt and penny counts. That's why at Nova, we're committed to
+          transforming how your business understands and manages energy. Specialising in solutions, we offer an
+          all-encompassing platform that guides you from the initial site analysis to detailed, actionable insights, all
+          bespoke to your unique needs.
+        </span>
       </div>
 
-      <div id="pricing" class="my-6 py-6 md:my-8 md:py-8">
-        <div class="text-900 font-bold text-5xl mb-4 text-center">Pricing Plans</div>
-        <div class="text-700 text-xl mb-8 text-center line-height-3">
-          Choose a plan that works best for you and your team.
+      <div id="nergy" class="grid grid-nogutter justify-content-between align-items-center mb-6 py-6 md:mb-6 md:py-8">
+        <div class="col-12 md:col-4 flex-order-1 md:flex-order-0 mb-6 md:mb-0 border-round">
+          <img
+            animateEnter="moveinright"
+            src="assets/demo/images/landing/{{ darkMode ? 'dashboard-dark' : 'dashboard-light' }}.png"
+            alt=""
+            class="w-full h-full border-round shadow-2 animation-duration-1000 animation-ease-out" />
         </div>
+        <div
+          class="col-12 md:col-7 flex flex-column gap-4 flex-order-0 md:flex-order-1 align-items-center md:align-items-start text-center md:text-left">
+          <span class="block text-900 font-bold text-4xl">Your Trusted Partner in Streamlined Energy Management</span>
+          <span class="block text-700 text-lg">
+            At Nova, we believe the journey to energy efficiency should be as seamless as it is impactful. We're devoted
+            to empowering businesses to take charge of their energy usage, providing a comprehensive suite of tools and
+            services designed to simplify and streamline the process.
+          </span>
 
-        <div class="grid grid-nogutter justify-content-center mt-8">
-          <div class="col-12 lg:col-6 xl:col-4">
-            <div class="p-3 h-full">
-              <div class="shadow-2 p-6 h-full flex flex-column surface-card" style="border-radius: 6px">
-                <span class="text-900 block font-medium text-xl mb-2 text-center">Basic Licence</span>
-                <span class="font-bold block text-2xl text-900 text-center">$29</span>
-
-                <ul class="list-none p-0 m-0 flex-grow-1 mt-6">
-                  <li class="flex align-items-center mb-3">
-                    <i class="pi pi-check text-green-500 mr-2"></i>
-                    <span>Up to 10 Active Users</span>
-                  </li>
-                  <li class="flex align-items-center mb-3">
-                    <i class="pi pi-check text-green-500 mr-2"></i>
-                    <span>Up to 30 Project Integrations</span>
-                  </li>
-                  <li class="flex align-items-center mb-3">
-                    <i class="pi pi-check text-green-500 mr-2"></i>
-                    <span>Analytics Module</span>
-                  </li>
-                  <li class="flex align-items-center mb-3">
-                    <i class="pi pi-times text-red-500 mr-2"></i>
-                    <span>Finance Module</span>
-                  </li>
-                </ul>
-
-                <button
-                  pButton
-                  pRipple
-                  label="Choose Plan"
-                  class="px-5 w-full mt-6 p-button-outlined"
-                  icon="pi pi-arrow-right"
-                  iconPos="right"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 lg:col-6 xl:col-4">
-            <div class="p-3 h-full">
-              <div class="shadow-2 p-6 h-full flex flex-column surface-card" style="border-radius: 6px">
-                <span class="text-900 block font-medium text-xl mb-2 text-center">Extended Licence</span>
-                <span class="font-bold block text-2xl text-900 text-center">$49</span>
-
-                <ul class="list-none p-0 m-0 flex-grow-1 mt-6">
-                  <li class="flex align-items-center mb-3">
-                    <i class="pi pi-check text-green-500 mr-2"></i>
-                    <span>Up to 10 Active Users</span>
-                  </li>
-                  <li class="flex align-items-center mb-3">
-                    <i class="pi pi-check text-green-500 mr-2"></i>
-                    <span>Up to 30 Project Integrations</span>
-                  </li>
-                  <li class="flex align-items-center mb-3">
-                    <i class="pi pi-check text-green-500 mr-2"></i>
-                    <span>Analytics Module</span>
-                  </li>
-                  <li class="flex align-items-center mb-3">
-                    <i class="pi pi-times text-red-500 mr-2"></i>
-                    <span>Finance Module</span>
-                  </li>
-                </ul>
-
-                <button
-                  pButton
-                  pRipple
-                  label="Choose Plan"
-                  class="px-5 w-full mt-6 p-button-outlined"
-                  icon="pi pi-arrow-right"
-                  iconPos="right"></button>
-              </div>
-            </div>
-          </div>
+          <span class="block text-700 text-lg">
+            Our offerings include advanced site analysis, state-of-the-art hardware, robust cellular connectivity, and a
+            user-friendly cloud platform. But our services go beyond that - our proprietary artificial intelligence
+            algorithms comb through your energy usage data, providing in-depth, actionable insights and strategies to
+            optimise your energy management.
+          </span>
         </div>
       </div>
 
       <div id="features" class="my-6 py-6 md:my-8 md:py-8">
-        <span class="text-900 block font-bold text-5xl mb-4 text-center">Features</span>
-        <span class="text-700 block text-xl mb-8 text-center line-height-3"
-          >PrimeTek Informatics is the author of PrimeReact, a UI Component vendor with well known vastly popular
-          projects including PrimeFaces, PrimeNG and PrimeVue.</span
-        >
+        <span class="text-900 block font-bold text-5xl mb-4 text-center">Why Nova Stands Out</span>
 
         <div class="grid mt-8">
           <div class="col-12 md:col-6 xl:col-3 flex justify-content-center p-3">
             <div class="box p-4 w-full surface-card surface-border border-1 border-round">
               <img src="assets/demo/images/landing/icon-components.svg" alt="components icon" class="block mb-3" />
-              <span class="text-900 block font-semibold mb-3 text-lg">90+ UI Components</span>
+              <span class="text-900 block font-semibold mb-3 text-lg">End-to-End Solutions, Simplified</span>
               <p class="m-0 text-secondary text-700">
-                The ultimate set of UI Components to assist you with 90+ impressive Angular Components.
+                With Nova, managing your energy usage becomes a worry-free affair. Our full suite of services means you
+                won't have to juggle between multiple service providers. We've got it all under one roof.
               </p>
             </div>
           </div>
           <div class="col-12 md:col-6 xl:col-3 flex justify-content-center p-3">
             <div class="box p-4 w-full surface-card surface-border border-1 border-round">
               <img src="assets/demo/images/landing/icon-community.svg" alt="components icon" class="block mb-3" />
-              <span class="text-900 block font-semibold mb-3 text-lg">Community</span>
+              <span class="text-900 block font-semibold mb-3 text-lg">Future-Ready Technology</span>
               <p class="m-0 text-secondary text-700">
-                Connect with the other open source community members, collaborate and have a voice in the project
-                roadmap.
+                We believe in harnessing the power of technology to facilitate smarter, greener choices. Our use of
+                cutting-edge AI technology helps you understand and manage your energy usage like never before.
               </p>
             </div>
           </div>
           <div class="col-12 md:col-6 xl:col-3 flex justify-content-center p-3">
             <div class="box p-4 w-full surface-card surface-border border-1 border-round">
               <img src="assets/demo/images/landing/icon-productivity.svg" alt="components icon" class="block mb-3" />
-              <span class="text-900 block font-semibold mb-3 text-lg">Productivity</span>
+              <span class="text-900 block font-semibold mb-3 text-lg">Data-Driven Insights</span>
               <p class="m-0 text-secondary text-700">
-                Boost your productivity by achieving more in less time and accomplish amazing results.
+                Our powerful analytics tools convert vast volumes of raw data into easily understandable and actionable
+                insights. Make well-informed decisions and strategies for energy usage based on solid data.
               </p>
             </div>
           </div>
           <div class="col-12 md:col-6 xl:col-3 flex justify-content-center p-3">
             <div class="box p-4 w-full surface-card surface-border border-1 border-round">
               <img src="assets/demo/images/landing/icon-accessibility.svg" alt="components icon" class="block mb-3" />
-              <span class="text-900 block font-semibold mb-3 text-lg">Accessibility</span>
+              <span class="text-900 block font-semibold mb-3 text-lg">Uninterrupted Connectivity</span>
               <p class="m-0 text-secondary text-700">
-                The ultimate set of UI Components to assist you with 90+ impressive Angular Components.
+                Our seamless cellular connectivity ensures that you can access your energy data anytime, anywhere.
               </p>
             </div>
           </div>
           <div class="col-12 md:col-6 xl:col-3 flex justify-content-center p-3">
             <div class="box p-4 w-full surface-card surface-border border-1 border-round">
               <img src="assets/demo/images/landing/icon-support.svg" alt="components icon" class="block mb-3" />
-              <span class="text-900 block font-semibold mb-3 text-lg">Enterprise Support</span>
+              <span class="text-900 block font-semibold mb-3 text-lg">Bespoke to Your Needs</span>
               <p class="m-0 text-secondary text-700">
-                Exceptional support service featuring response within 1 business day and option to request enhancements
-                and new features for the library.
+                Every business is unique, and so are your energy needs. Our solutions are fully customisable to meet
+                your specific requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="features" class="my-6 py-6 md:my-8 md:py-8">
+        <span class="text-900 block font-bold text-5xl mb-4 text-center"
+          >Our Process - Simple, Seamless, and Efficient</span
+        >
+        <span class="text-700 block text-xl mb-8 text-center line-height-3"
+          >We've streamlined our process to make it as simple as possible for businesses of all sizes and industries.
+          Here's how it works:
+        </span>
+        <div class="grid mt-8">
+          <div class="col-12 md:col-6 xl:col-3 flex justify-content-center p-3">
+            <div class="box p-4 w-full surface-card surface-border border-1 border-round">
+              <img src="assets/demo/images/landing/icon-components.svg" alt="components icon" class="block mb-3" />
+              <span class="text-900 block font-semibold mb-3 text-lg">Evaluate Existing Infrastructure</span>
+              <p class="m-0 text-secondary text-700">
+                Our team conducts an in-depth analysis of your existing meters and sensors to assess your current energy
+                usage.
               </p>
             </div>
           </div>
           <div class="col-12 md:col-6 xl:col-3 flex justify-content-center p-3">
             <div class="box p-4 w-full surface-card surface-border border-1 border-round">
-              <img src="assets/demo/images/landing/icon-mobile.svg" alt="components icon" class="block mb-3" />
-              <span class="text-900 block font-semibold mb-3 text-lg">Mobile</span>
+              <img src="assets/demo/images/landing/icon-community.svg" alt="components icon" class="block mb-3" />
+              <span class="text-900 block font-semibold mb-3 text-lg">Deploy State-of-the-art Equipment</span>
               <p class="m-0 text-secondary text-700">
-                First class support for responsive design led by touch optimized elements.
+                Based on our evaluation, we deploy advanced equipment bespoke to your needs, ensuring accurate and
+                comprehensive data capture.
               </p>
             </div>
           </div>
           <div class="col-12 md:col-6 xl:col-3 flex justify-content-center p-3">
             <div class="box p-4 w-full surface-card surface-border border-1 border-round">
-              <img src="assets/demo/images/landing/icon-theme.svg" alt="components icon" class="block mb-3" />
-              <span class="text-900 block font-semibold mb-3 text-lg">Themes</span>
+              <img src="assets/demo/images/landing/icon-productivity.svg" alt="components icon" class="block mb-3" />
+              <span class="text-900 block font-semibold mb-3 text-lg">Cloud Integration</span>
               <p class="m-0 text-secondary text-700">
-                Built on a design-agnostic api, choose from a vast amount of themes such as material, bootstrap, custom
-                or develop your own.
+                We integrate the new and existing equipment with our cloud platform. Our hardware-agnostic approach
+                means we can integrate any device or existing meter with our platform, normalising the data into a
+                common schema.
               </p>
             </div>
           </div>
           <div class="col-12 md:col-6 xl:col-3 flex justify-content-center p-3">
             <div class="box p-4 w-full surface-card surface-border border-1 border-round">
-              <img src="assets/demo/images/landing/icon-ts.svg" alt="components icon" class="block mb-3" />
-              <span class="text-900 block font-semibold mb-3 text-lg">Typescript</span>
+              <img src="assets/demo/images/landing/icon-accessibility.svg" alt="components icon" class="block mb-3" />
+              <span class="text-900 block font-semibold mb-3 text-lg">Deliver Insights</span>
               <p class="m-0 text-secondary text-700">
-                Top-notch support for Typescript with types and tooling assistance.
+                We then start delivering actionable insights through our AI-driven analytics. You'll receive real-time
+                updates and suggestions on how to optimise your energy consumption.
               </p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div id="Industries" class="my-6 py-6 md:my-8 md:py-8">
+        <span class="text-900 block font-bold text-5xl mb-4 text-center">Industries We Serve</span>
+        <span class="text-700 block text-xl mb-8 text-center line-height-3"
+          >From intelligent buildings utilising IoT technology to logistics firms aiming for cost-efficient operations
+          and manufacturers seeking energy-intensive processes optimisation, Nova's energy monitoring services are
+          applicable across a variety of sectors.
+        </span>
+
+        <div class="flex flex-column lg:flex-row align-items-center justify-content-between mt-8 gap-8">
+          <div class="flex flex-column align-items-center">
+            <img
+              animateEnter="scalein"
+              src="assets/images/smart-city.png"
+              alt="chat"
+              class="w-full h-full border-round surface-border animation-duration-500 origin-top" />
+            <span class="block text-900 text-lg font-semibold mt-4">Smart Buildings</span>
+            <span class="block text-700 text-lg mt-4 text-center">
+              Nova helps intelligent buildings become even smarter by providing comprehensive energy usage data that can
+              optimise operations and save costs.
+            </span>
+          </div>
+          <div class="flex flex-column align-items-center">
+            <img
+              animateEnter="scalein"
+              src="assets/images/logistics.png"
+              alt="chat"
+              class="w-full h-full border-round surface-border animation-duration-500 origin-top" />
+            <span class="block text-900 text-lg font-semibold mt-4">Logistics</span>
+            <span class="block text-700 text-lg mt-4 text-center">
+              We assist logistics firms in reducing their energy costs, enabling them to run more efficient,
+              cost-effective operations.
+            </span>
+          </div>
+          <div class="flex flex-column align-items-center">
+            <img
+              animateEnter="scalein"
+              src="assets/images/waste.png"
+              alt="chat"
+              class="w-full h-full border-round surface-border animation-duration-500 origin-top" />
+            <span class="block text-900 text-lg font-semibold mt-4">Manufacturing</span>
+            <span class="block text-700 text-lg mt-4 text-center">
+              Nova’s services aid manufacturers in identifying and reducing energy waste, improving overall productivity
+              and bottom line.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div id="home" class="grid grid-nogutter justify-content-between align-items-center my-6 py-6 md:my-8 md:py-8">
+        <div
+          class="col-12 md:col-7 flex flex-column gap-4 flex-order-1 md:flex-order-0 align-items-center md:align-items-start text-center md:text-left">
+          <span class="block text-900 font-bold text-4xl">Embrace the Future of Energy Management with Nova</span>
+
+          <span class="block text-700 text-lg">
+            Join us in revolutionising the way businesses perceive and manage energy. Reach out to us today to learn
+            more about how our advanced energy monitoring services can propel your business towards greater efficiency,
+            significant cost savings, and a greener future.
+          </span>
+          <button
+            pButton
+            pRipple
+            type="button"
+            label="Speak to us"
+            icon="pi pi-arrow-right"
+            iconPos="right"
+            class="w-12rem p-button-outlined"></button>
+        </div>
+
+        <div class="col-12 md:col-3 flex-order-0 md:flex-order-1 mb-6 md:mb-0 border-round">
+          <img
+            animateEnter="moveinright"
+            src="assets/images/rocket.png"
+            alt=""
+            class="w-full h-full border-round animation-duration-1000 animation-ease-out" />
         </div>
       </div>
 
