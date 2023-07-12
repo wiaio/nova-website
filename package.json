@@ -1,6 +1,7 @@
 {
   "name": "nova-website",
   "version": "0.0.0",
+  "homepage": "https://wiaio.github.io/nova-website",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
