@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build website
-        run: npm run build --deploy-url=https://wiaio.github.io/nova-website/
+        run: npm run build --deploy-url=https://wiaio.github.io/${{ github.ref_name }}/ --configuration=${{ github.ref_name }}
 
       - name: Add CNAME
         run: echo wiaio.github.io/nova-website >./dist/nova-website/CNAME
