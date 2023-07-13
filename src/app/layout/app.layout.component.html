@@ -1,6 +1,16 @@
 <div class="layout-container" [ngClass]="containerClass">
   <div class="relative overflow-hidden flex flex-column layout-content-wrapper">
-    <div class="bg-circle opacity-50" style="top: -200px; left: -700px"></div>
+    <div class="bg-circle opacity-50" style="top: -200px; left: -700px">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="696" viewBox="0 0 1440 696" fill="none">
+        <path d="M0 696L1440 550.851V0H0V696Z" fill="url(#paint0_linear_1_266)" />
+        <defs>
+          <linearGradient id="paint0_linear_1_266" x1="720" y1="0" x2="720" y2="696" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" />
+            <stop offset="1" stop-color="#E2F1FF" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
     <div class="bg-circle hidden lg:flex" style="top: 50px; right: -800px; transform: rotate(60deg)"></div>
     <app-topbar></app-topbar>
     <app-breadcrumb class="content-breadcrumb"></app-breadcrumb>
