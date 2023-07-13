@@ -960,6 +960,10 @@ a {
   .layout-container .content-breadcrumb {
     display: block;
   }
+  .topbar {
+    padding: 0 1rem !important;
+  }
+
 }
 @media screen and (min-width: 1960px) {
   .layout-content, .landing-wrapper {

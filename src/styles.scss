@@ -37,6 +37,42 @@ $gutter: 1rem; //for primeflex grid system
   }
 }
 
+// hero
+.hero-background {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  svg {
+    min-height: 50vh;
+  }
+}
+
+// topbar
+.topbar {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 1.5rem 2rem;
+  z-index: 999;
+  transition: all 0.5s ease-out;
+  transition-delay: 0.3s;
+
+  .topbar-container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  ul {
+    margin: 0 !important;
+  }
+}
+.topbar.active {
+  background: linear-gradient(180deg, #fff 0%, #e2f1ff 100%);
+  //#E2F1FF// rgba(255, 255, 255, 0.9);
+}
+
 // PrimeNg
 
 .p-dialog .p-dialog-header {
