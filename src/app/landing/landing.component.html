@@ -1,4 +1,5 @@
 <div class="relative overflow-hidden flex flex-column justify-content-center">
+  <p-toast></p-toast>
   <div class="landing-wrapper">
     <div class="py-4 px-4 mx-0 md:mx-6 lg:mx-8 lg:px-8 z-2">
       <div id="header" class="my-6 md:my-8">
@@ -20,7 +21,8 @@
             label="Speak to us"
             icon="pi pi-arrow-right"
             iconPos="right"
-            class="w-12rem p-button-outlined"></button>
+            class="w-12rem p-button-outlined"
+            (click)="showContacUs()"></button>
         </div>
 
         <div class="col-12 md:col-6 flex-order-0 md:flex-order-1 mb-6 md:mb-0 border-round">

@@ -2,24 +2,52 @@ import { Component, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
 import { LayoutService } from 'src/app/layout/service/app.layout.service';
 import { Subscription } from 'rxjs';
+import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { MessageService } from 'primeng/api';
 
 @Component({
-    templateUrl: './landing.component.html',
-    styleUrls: ['./landing.component.scss']
+  templateUrl: './landing.component.html',
+  styleUrls: ['./landing.component.scss'],
 })
 export class LandingComponent implements OnDestroy {
+  subscription: Subscription;
 
-    subscription: Subscription;
+  darkMode: boolean = false;
 
-    darkMode: boolean = false;
+  ref: DynamicDialogRef | undefined;
 
-    constructor(public router: Router, private layoutService: LayoutService) {
-        this.subscription = this.layoutService.configUpdate$.subscribe(config => {
-            this.darkMode = config.colorScheme === 'dark' || config.colorScheme === 'dim' ? true : false;
-        });
-    }
+  constructor(
+    public router: Router,
+    private layoutService: LayoutService,
+    public dialogService: DialogService,
+    public messageService: MessageService
+  ) {
+    this.subscription = this.layoutService.configUpdate$.subscribe(config => {
+      this.darkMode = config.colorScheme === 'dark' || config.colorScheme === 'dim' ? true : false;
+    });
+  }
 
-    ngOnDestroy() {
-        this.subscription.unsubscribe();
-    }
+  showContacUs() {
+    this.ref = this.dialogService.open(ContactUsComponent, {
+      header: 'Speak to Us',
+      width: '70%',
+      contentStyle: { overflow: 'auto' },
+      baseZIndex: 10000,
+    });
+
+    this.ref.onClose.subscribe(product => {
+      if (product) {
+        this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Email sent' });
+      }
+    });
+
+    this.ref.onMaximize.subscribe(value => {
+      this.messageService.add({ severity: 'info', summary: 'Maximized', detail: `maximized: ${value.maximized}` });
+    });
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+  }
 }

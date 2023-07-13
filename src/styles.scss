@@ -36,3 +36,11 @@ $gutter: 1rem; //for primeflex grid system
     width: auto;
   }
 }
+
+// PrimeNg
+
+.p-dialog .p-dialog-header {
+  border-bottom-width: 1px !important;
+  border-bottom-style: solid;
+  border-color: var(--surface-border) !important;
+}
