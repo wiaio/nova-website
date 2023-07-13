@@ -16,9 +16,18 @@
             class="w-full h-full border-round animation-duration-1000 animation-ease-out" />
         </div>
       </div>
+
       <div id="home" class="grid grid-nogutter justify-content-between align-items-center mb-6 py-6 md:mb-6 md:py-8">
+        <div class="col-12 md:col-5 flex-order-1 md:flex-order-0 mb-6 md:mb-0 border-round">
+          <img
+            animateEnter="moveinright"
+            src="assets/images/renewable-energy.png"
+            alt=""
+            class="w-full h-full border-round animation-duration-1000 animation-ease-out" />
+        </div>
+
         <div
-          class="col-12 md:col-5 flex flex-column gap-4 flex-order-1 md:flex-order-0 align-items-center md:align-items-start text-center md:text-left">
+          class="col-12 md:col-6 flex flex-column gap-4 flex-order-o md:flex-order-1 align-items-center md:align-items-start text-center md:text-left">
           <span class="block text-900 font-bold text-4xl"
             >Redefining Energy Utilisation Through Intelligent Monitoring</span
           >
@@ -33,14 +42,6 @@
             class="w-12rem p-button-outlined"
             (click)="showContacUs()"></button>
         </div>
-
-        <div class="col-12 md:col-6 flex-order-0 md:flex-order-1 mb-6 md:mb-0 border-round">
-          <img
-            animateEnter="moveinright"
-            src="assets/demo/images/landing/{{ darkMode ? 'dashboard-dark' : 'dashboard-light' }}.png"
-            alt=""
-            class="w-full h-full border-round shadow-2 animation-duration-1000 animation-ease-out" />
-        </div>
       </div>
 
       <div id="features" class="my-6 py-6 md:my-6 md:py-6">
@@ -53,7 +54,7 @@
       </div>
 
       <div id="nergy" class="grid grid-nogutter justify-content-between align-items-center mb-6 py-6 md:mb-6 md:py-8">
-        <div class="col-12 md:col-4 flex-order-1 md:flex-order-0 mb-6 md:mb-0 border-round">
+        <div class="col-12 md:col-4 flex-order-0 md:flex-order-1 mb-6 md:mb-0 border-round">
           <img
             animateEnter="moveinright"
             src="assets/demo/images/landing/{{ darkMode ? 'dashboard-dark' : 'dashboard-light' }}.png"
@@ -61,15 +62,15 @@
             class="w-full h-full border-round shadow-2 animation-duration-1000 animation-ease-out" />
         </div>
         <div
-          class="col-12 md:col-7 flex flex-column gap-4 flex-order-0 md:flex-order-1 align-items-center md:align-items-start text-center md:text-left">
+          class="col-12 md:col-7 flex flex-column gap-4 flex-order-1 md:flex-order-0 align-items-center md:align-items-start text-center md:text-left">
           <span class="block text-900 font-bold text-4xl">Your Trusted Partner in Streamlined Energy Management</span>
-          <span class="block text-700 text-lg">
+          <span class="block text-700 text-lg line-height-3">
             At Nova, we believe the journey to energy efficiency should be as seamless as it is impactful. We're devoted
             to empowering businesses to take charge of their energy usage, providing a comprehensive suite of tools and
             services designed to simplify and streamline the process.
           </span>
 
-          <span class="block text-700 text-lg">
+          <span class="block text-700 text-lg line-height-3">
             Our offerings include advanced site analysis, state-of-the-art hardware, robust cellular connectivity, and a
             user-friendly cloud platform. But our services go beyond that - our proprietary artificial intelligence
             algorithms comb through your energy usage data, providing in-depth, actionable insights and strategies to
@@ -82,50 +83,65 @@
         <span class="text-900 block font-bold text-5xl mb-4 text-center">Why Nova Stands Out</span>
 
         <div class="grid mt-8">
-          <div class="col-12 md:col-6 xl:col-3 flex justify-content-center p-3">
-            <div class="box p-4 w-full surface-card surface-border border-1 border-round">
-              <img src="assets/demo/images/landing/icon-components.svg" alt="components icon" class="block mb-3" />
-              <span class="text-900 block font-semibold mb-3 text-lg">End-to-End Solutions, Simplified</span>
-              <p class="m-0 text-secondary text-700">
+          <div class="col-12 md:col-6 xl:col-6 flex justify-content-center p-3">
+            <div class="box p-4 w-full surface-card flex flex-column align-items-center">
+              <img
+                animateEnter="scalein"
+                src="assets/images/end-to-end.svg"
+                alt="components icon"
+                class="text-center mb-3"
+                style="width: 50px; height: 50px" />
+              <span class="text-900 text-center block font-semibold mb-3 text-lg"
+                >End-to-End Solutions, Simplified</span
+              >
+              <p class="m-0 text-secondary text-700 text-center">
                 With Nova, managing your energy usage becomes a worry-free affair. Our full suite of services means you
                 won't have to juggle between multiple service providers. We've got it all under one roof.
               </p>
             </div>
           </div>
-          <div class="col-12 md:col-6 xl:col-3 flex justify-content-center p-3">
-            <div class="box p-4 w-full surface-card surface-border border-1 border-round">
-              <img src="assets/demo/images/landing/icon-community.svg" alt="components icon" class="block mb-3" />
-              <span class="text-900 block font-semibold mb-3 text-lg">Future-Ready Technology</span>
-              <p class="m-0 text-secondary text-700">
+          <div class="col-12 md:col-6 xl:col-6 flex justify-content-center p-3">
+            <div class="box p-4 w-full surface-card flex flex-column align-items-center surface-border">
+              <img
+                src="assets/demo/images/landing/icon-community.svg"
+                alt="components icon"
+                class="text-center block mb-3" />
+              <span class="text-900 block font-semibold mb-3 text-lg text-center">Future-Ready Technology</span>
+              <p class="m-0 text-secondary text-700 text-center">
                 We believe in harnessing the power of technology to facilitate smarter, greener choices. Our use of
                 cutting-edge AI technology helps you understand and manage your energy usage like never before.
               </p>
             </div>
           </div>
-          <div class="col-12 md:col-6 xl:col-3 flex justify-content-center p-3">
-            <div class="box p-4 w-full surface-card surface-border border-1 border-round">
+        </div>
+        <div class="grid">
+          <div class="col-12 md:col-6 xl:col-4 flex justify-content-center p-3">
+            <div class="box p-4 w-full surface-card flex flex-column align-items-center surface-border">
+              <img src="assets/demo/images/landing/icon-accessibility.svg" alt="components icon" class="block mb-3" />
+              <span class="text-900 block font-semibold mb-3 text-lg text-center">Uninterrupted Connectivity</span>
+              <p class="m-0 text-secondary text-700 text-center">
+                Our seamless cellular connectivity ensures that you can access your energy data anytime, anywhere.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 md:col-6 xl:col-4 flex justify-content-center p-3">
+            <div class="box p-4 w-full surface-card flex flex-column align-items-center surface-border">
               <img src="assets/demo/images/landing/icon-productivity.svg" alt="components icon" class="block mb-3" />
-              <span class="text-900 block font-semibold mb-3 text-lg">Data-Driven Insights</span>
-              <p class="m-0 text-secondary text-700">
+              <span class="text-900 block font-semibold mb-3 text-lg text-center">Data-Driven Insights</span>
+              <p class="m-0 text-secondary text-700 text-center">
                 Our powerful analytics tools convert vast volumes of raw data into easily understandable and actionable
                 insights. Make well-informed decisions and strategies for energy usage based on solid data.
               </p>
             </div>
           </div>
-          <div class="col-12 md:col-6 xl:col-3 flex justify-content-center p-3">
-            <div class="box p-4 w-full surface-card surface-border border-1 border-round">
-              <img src="assets/demo/images/landing/icon-accessibility.svg" alt="components icon" class="block mb-3" />
-              <span class="text-900 block font-semibold mb-3 text-lg">Uninterrupted Connectivity</span>
-              <p class="m-0 text-secondary text-700">
-                Our seamless cellular connectivity ensures that you can access your energy data anytime, anywhere.
-              </p>
-            </div>
-          </div>
-          <div class="col-12 md:col-6 xl:col-3 flex justify-content-center p-3">
-            <div class="box p-4 w-full surface-card surface-border border-1 border-round">
-              <img src="assets/demo/images/landing/icon-support.svg" alt="components icon" class="block mb-3" />
-              <span class="text-900 block font-semibold mb-3 text-lg">Bespoke to Your Needs</span>
-              <p class="m-0 text-secondary text-700">
+          <div class="col-12 md:col-6 xl:col-4 flex p-3">
+            <div class="box p-4 w-full surface-card flex flex-column align-items-center surface-border border-round">
+              <img
+                src="assets/demo/images/landing/icon-support.svg"
+                alt="components icon"
+                class="align-items-center mb-3" />
+              <span class="text-900 block font-semibold mb-3 text-lg text-center">Bespoke to Your Needs</span>
+              <p class="m-0 text-secondary text-700 text-center">
                 Every business is unique, and so are your energy needs. Our solutions are fully customisable to meet
                 your specific requirements.
               </p>
