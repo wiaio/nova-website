@@ -20,6 +20,8 @@ import { RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { CommonModule } from '@angular/common';
 import { StyleClassModule } from 'primeng/styleclass';
+import { DialogService } from 'primeng/dynamicdialog';
+import { MessageService } from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -47,5 +49,6 @@ import { StyleClassModule } from 'primeng/styleclass';
     RouterModule,
     StyleClassModule,
   ],
+  providers: [DialogService, MessageService],
 })
 export class AppLayoutModule {}

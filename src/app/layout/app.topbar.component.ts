@@ -1,5 +1,8 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { MessageService } from 'primeng/api';
+import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { LayoutService } from 'src/app/layout/service/app.layout.service';
+import { ContactUsComponent } from '../landing/components/contact-us/contact-us.component';
 
 @Component({
   selector: 'app-topbar',
@@ -10,7 +13,13 @@ export class AppTopbarComponent {
 
   scrollPosition = 0;
 
-  constructor(public layoutService: LayoutService) {}
+  ref: DynamicDialogRef | undefined;
+
+  constructor(
+    public layoutService: LayoutService,
+    public dialogService: DialogService,
+    public messageService: MessageService
+  ) {}
 
   onMenuButtonClick() {
     this.layoutService.onMenuToggle();
@@ -25,9 +34,25 @@ export class AppTopbarComponent {
 
   @HostListener('window:scroll', ['$event'])
   doSomething(event: any) {
-    // console.debug("Scroll Event", document.body.scrollTop);
-    // see András Szepesházi's comment below
-    // console.log(event);
     this.scrollPosition = window.pageYOffset;
+  }
+
+  showContacUs() {
+    this.ref = this.dialogService.open(ContactUsComponent, {
+      header: 'Speak to Us',
+      width: '70%',
+      contentStyle: { overflow: 'auto' },
+      baseZIndex: 10000,
+    });
+
+    this.ref.onClose.subscribe(product => {
+      if (product) {
+        this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Email sent' });
+      }
+    });
+
+    this.ref.onMaximize.subscribe(value => {
+      this.messageService.add({ severity: 'info', summary: 'Maximized', detail: `maximized: ${value.maximized}` });
+    });
   }
 }
