@@ -49,6 +49,17 @@ $gutter: 1rem; //for primeflex grid system
   }
 }
 
+.industries-container {
+  position: relative;
+  padding-top: 184px !important;
+}
+.industries-backgound {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
 // topbar
 .topbar {
   position: fixed;
@@ -79,4 +90,21 @@ $gutter: 1rem; //for primeflex grid system
   border-bottom-width: 1px !important;
   border-bottom-style: solid;
   border-color: var(--surface-border) !important;
+}
+
+.info-violet {
+  padding: 8px 16px;
+  background: var(--primary-100);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.footer {
+  background: #fbfcff;
 }

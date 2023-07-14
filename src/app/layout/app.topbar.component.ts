@@ -29,6 +29,5 @@ export class AppTopbarComponent {
     // see András Szepesházi's comment below
     // console.log(event);
     this.scrollPosition = window.pageYOffset;
-    console.log('Scroll Event', window.pageYOffset);
   }
 }

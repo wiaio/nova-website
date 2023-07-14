@@ -25,4 +25,8 @@ export class ContactUsComponent {
   email: string = '';
 
   message: string = '';
+
+  company: string = '';
+
+  companySize: number | undefined = undefined;
 }

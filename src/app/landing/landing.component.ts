@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LayoutService } from 'src/app/layout/service/app.layout.service';
 import { Subscription } from 'rxjs';
@@ -10,12 +10,14 @@ import { MessageService } from 'primeng/api';
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss'],
 })
-export class LandingComponent implements OnDestroy {
+export class LandingComponent implements OnInit, OnDestroy {
   subscription: Subscription;
 
   darkMode: boolean = false;
 
   ref: DynamicDialogRef | undefined;
+
+  layoutContainer: HTMLElement | null = null;
 
   constructor(
     public router: Router,
@@ -26,6 +28,10 @@ export class LandingComponent implements OnDestroy {
     this.subscription = this.layoutService.configUpdate$.subscribe(config => {
       this.darkMode = config.colorScheme === 'dark' || config.colorScheme === 'dim' ? true : false;
     });
+  }
+
+  ngOnInit(): void {
+    this.layoutContainer = document.getElementById('layoutContainer');
   }
 
   showContacUs() {
